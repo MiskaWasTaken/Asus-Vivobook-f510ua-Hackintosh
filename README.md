@@ -1,5 +1,7 @@
 # Asus VivoBook S15 S510UA/ F510UA series
 
+# Use opencore install guide and the efi as a starting point, dont just drag and drop this efi. This efi is meant for when macOS is fully installed and is independant of a usb booter
+
 This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Catalina 10.15.7 - Monterey 12.1
 
 🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11)** ✅
@@ -37,7 +39,7 @@ This build enables you to run macOS on your VivoBook as long as it matches below
     Technology:	OpenCore and Clover with ACPI hotpatch by RehabMan
     OpenCore:    	v.0.7.5
     Clover:    	r5142
-   Changelog:   	see [Changelog.md](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
+   Changelog:   	see [Changelog.md](https://github.com/MiskaWasTaken/Asus-Vivobook-S510UA-Hackintosh/blob/master/ChangeLog.md)
 
 # System specification & Introduction
 
