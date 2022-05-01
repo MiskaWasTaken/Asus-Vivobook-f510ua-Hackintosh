@@ -1,3 +1,14 @@
+## [Release v12 (Miska edition)
+- Added wifi compatibility via airport
+- Added max performance kext (horrific battery life)
+- removed clover support
+- added vault and password support
+- did macos post installation stuff via opencore post install guide
+
+
+
+
+
 ## [Release v.11.1, Apr. 18 2021](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/releases/tag/11.1)
 - **MSR E2** ("_CFG Lock_") unlocking:
   - **OC**: updated `ControlMsrE2.efi`
