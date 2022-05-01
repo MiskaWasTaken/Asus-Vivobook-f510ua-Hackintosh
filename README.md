@@ -2,6 +2,8 @@
 
 # Use opencore install guide and the efi as a starting point, dont just drag and drop this efi. This efi is meant for when macOS is fully installed and is independant of a usb booter
 
+# Dont use opencore configurator or propertree snapshot IT WILL BREAK THE CONFIG!
+
 This build enables you to run macOS on your VivoBook as long as it matches below System specifications as close as possible - verified with macOS Catalina 10.15.7 - Monterey 12.1
 
 🏳🚩**For macOS Monterey compatibility, see [macOS Monterey 12.x upgrade instructions for existing EFIs running pre-Monterey macOS](https://github.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/issues/11)** ✅
@@ -66,7 +68,7 @@ Users with VivoBooks *without* keyboard backlight are advised to rather use [wha
 
  _In any case_ please _do_ read through his [ReadME](https://github.com/whatnameisit/Asus-Vivobook-X510UA-BQ490-Hackintosh) because it contains a wealth of important info and links which also apply to this repo!
 
-Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and [Clover](https://github.com/CloverHackyColor/CloverBootloader), OC can be considered the preferred one despite of still being beta by version number. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other sophisticated features. For a more detailed comparison, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
+Of the two bootloaders offered in this repo, [OpenCore](https://github.com/acidanthera/OpenCorePkg) and OC can be considered the preferred one despite of still being beta by version number. As per whatnameisit and others, in contrast to OC, Clover at this point does not support OEMTableID, masking and many other sophisticated features. For a more detailed comparison, you could read [Why OpenCore over Clover and others](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#opencore-features).
 
 <img src="https://raw.githubusercontent.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/master/OpenCore/Screenshot%20OC%20GUI.jpg" width="48%" height="" /> &nbsp; <img src="https://raw.githubusercontent.com/LeeBinder/Asus-Vivobook-S510UA-Hackintosh/master/Clover/Screenshot%20Clover%20GUI.jpg" width="48%" height="" />
 
@@ -120,11 +122,6 @@ If there is more than one boot-arg, make sure you separate them from each other 
  ### OpenCore:
  * [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
  * [Dortania guides](https://dortania.github.io/getting-started/) | [Online Reference Manual](https://raw.githubusercontent.com/acidanthera/OpenCorePkg/master/Docs/Configuration.pdf) (Pdf)
-
-
- ### Clover:
- * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
- *  [Clover Crate (unofficial) Online Documentation](https://github.com/5T33Z0/Clover-Crate)
 
 # Steps to install macOS
 
@@ -221,6 +218,9 @@ You should see:<br>
 - **IMPORTANT**: Every time you reset your BIOS by loading ("Optimized")  Defaults (F9) or install a different BIOS version, you will need to flip this bit again! Resetting or clearing NVRAM, however, should ***not*** re-lock the MSR E2 register.
 
 Links: [OC Debug](https://github.com/utopia-team/opencore-debug/releases) (contains `ControlMsrE2.efi` - by utopia team) | [CFGLock.efi](https://www.insanelymac.com/forum/topic/344035-cfglock-unlock-msr-0xe2/) (legacy 2020-06 - by Brummbär) | [RU - CFG LOCK/Unlocking - Alternative method](https://www.reddit.com/r/hackintosh/comments/hz2rtm/cfg_lockunlocking_alternative_method/)
+
+
+# Do below if you want or you can just use airport kext
 
 # Optional Wi-Fi Replacement
 
